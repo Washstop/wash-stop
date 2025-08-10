@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WashStop Carwash — Detailing & Cleaning Products in Durban</title>
+  <meta name="description" content="WashStop Carwash in Durban offers premium detailing services and a curated shop of cleaning products. Visit us at 312 Kenyon Howden Rd. Book online or shop now." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#0b6cf4" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="WashStop Carwash — Detailing & Cleaning Products" />
+  <meta property="og:description" content="Premium detailing services and pro-grade cleaning products in Durban. 312 Kenyon Howden Rd." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/" />
+  <meta property="og:image" content="assets/og-cover.png" />
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoWash",
+    "name": "WashStop Carwash",
+    "image": "assets/og-cover.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "312 Kenyon Howden Rd",
+      "addressLocality": "Durban",
+      "addressRegion": "KwaZulu-Natal",
+      "addressCountry": "ZA"
+    },
+    "email": "mailto:phakaman8764@outlook.com",
+    "url": "/",
+    "priceRange": "$$",
+    "description": "Premium carwash and detailing services with a curated shop of cleaning products.",
+    "openingHours": ["Mo-Sa 08:00-18:00", "Su 09:00-16:00"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="WashStop logo" class="logo" />
+        <span class="brand-name">WashStop</span>
+      </div>
+      <nav aria-label="Main navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">☰</button>
+        <ul id="nav-menu" class="nav-list">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="edit-toggle" class="btn small outline">Edit Site</button></li>
+          <li><button class="cart-btn" aria-haspopup="dialog" aria-controls="cart-dialog">Cart<span id="cart-count" class="badge">0</span></button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Premium Detailing & Cleaning Products</h1>
+          <p>Durban’s sleekest wash & detail studio. Drop in at <strong>312 Kenyon Howden Rd</strong> or book online. Shop pro-grade products used by our technicians.</p>
+          <div class="cta-row">
+            <a href="#services" class="btn primary">Book a Detail</a>
+            <a href="#shop" class="btn outline">Shop Products</a>
+          </div>
+          <ul class="trust-points" role="list">
+            <li>Hand wash specialists</li>
+            <li>Paint-safe methods</li>
+            <li>Same-day appointments</li>
+          </ul>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <img src="assets/hero-car.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">Detailing Services</h2>
+        <p class="section-sub">Select a package and book your slot. We’ll confirm via email.</p>
+        <div class="cards three">
+          <article class="card">
+            <h3>Express Wash</h3>
+            <p class="muted">Exterior foam wash, wheel face cleanse, quick dry, tyre shine.</p>
+            <div class="price">R120</div>
+            <button class="btn small" data-book="Express Wash">Book</button>
+          </article>
+          <article class="card">
+            <h3>Interior Refresh</h3>
+            <p class="muted">Vacuum, plastics wipe-down, glass in/out, deodorise.</p>
+            <div class="price">R280</div>
+            <button class="btn small" data-book="Interior Refresh">Book</button>
+          </article>
+          <article class="card">
+            <h3>Full Detail</h3>
+            <p class="muted">Exterior+interior, clay, light polish, wax, engine bay wipe.</p>
+            <div class="price">R950</div>
+            <button class="btn small" data-book="Full Detail">Book</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="shop" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Shop Cleaning Products</h2>
+        <p class="section-sub">Add items to cart and checkout via email. Pay in-store on collection or delivery (T&Cs apply).</p>
+        <div class="grid products" id="product-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="location" class="section">
+      <div class="container">
+        <h2 class="section-title">Find Us</h2>
+        <p class="section-sub">312 Kenyon Howden Rd, Durban</p>
+        <div class="map-wrap">
+          <iframe title="Map to WashStop Carwash" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=312%20Kenyon%20Howden%20Rd%2C%20Durban&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Contact & Booking</h2>
+        <div class="contact-layout">
+          <form id="booking-form" class="card form" aria-describedby="booking-help">
+            <h3>Book a Service</h3>
+            <p id="booking-help" class="muted">We’ll email back to confirm your time.</p>
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              <span>Phone</span>
+              <input type="tel" name="phone" placeholder="+27..." />
+            </label>
+            <label>
+              <span>Service</span>
+              <select name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option>Express Wash</option>
+                <option>Interior Refresh</option>
+                <option>Full Detail</option>
+              </select>
+            </label>
+            <label>
+              <span>Preferred Date</span>
+              <input type="date" name="date" required />
+            </label>
+            <label>
+              <span>Notes</span>
+              <textarea name="notes" rows="3" placeholder="Vehicle model, colour, special requests..."></textarea>
+            </label>
+            <button class="btn primary" type="submit">Send Booking</button>
+            <p class="tiny muted">By submitting you consent to be contacted about your booking.</p>
+          </form>
+
+          <div class="card contact-card">
+            <h3>Reach Us</h3>
+            <ul class="contact-list" role="list">
+              <li><strong>Email:</strong> <a href="mailto:phakaman8764@outlook.com">phakaman8764@outlook.com</a></li>
+              <li><strong>Address:</strong> 312 Kenyon Howden Rd, Durban</li>
+              <li><strong>Hours:</strong> Mon–Sat 08:00–18:00, Sun 09:00–16:00</li>
+            </ul>
+            <p class="muted tiny">Update hours in <code>index.html</code> JSON‑LD & here if needed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="admin-panel" class="section" style="display:none;">
+      <div class="container">
+        <h2>Edit Mode — WashStop Admin</h2>
+        <p class="muted">Make quick changes to services & products. Saved locally in your browser.</p>
+        <div>
+          <h3>Services</h3>
+          <div id="admin-services"></div>
+        </div>
+        <div style="margin-top:30px;">
+          <h3>Products</h3>
+          <div id="admin-products"></div>
+        </div>
+        <div style="margin-top:20px;">
+          <button id="admin-save" class="btn primary">Save Changes</button>
+          <button id="admin-exit" class="btn outline">Exit Edit Mode</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> WashStop Carwash — All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <a href="#services">Services</a>
+        <a href="#shop">Shop</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Cart dialog -->
+  <dialog id="cart-dialog" aria-label="Shopping cart">
+    <form method="dialog">
+      <header class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="icon-btn" value="close" aria-label="Close cart">✕</button>
+      </header>
+      <div id="cart-items" class="cart-items" aria-live="polite"></div>
+      <div class="cart-footer">
+        <div class="totals">
+          <span>Subtotal:</span>
+          <strong id="cart-subtotal">R0</strong>
+        </div>
+        <div class="cart-actions">
+          <button class="btn outline" id="clear-cart" type="button">Clear</button>
+          <button class="btn primary" id="checkout-btn" type="button">Checkout</button>
+        </div>
+        <p class="tiny muted">Checkout opens an email with your items. No payment is taken online.</p>
+      </div>
+    </form>
+  </dialog>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
